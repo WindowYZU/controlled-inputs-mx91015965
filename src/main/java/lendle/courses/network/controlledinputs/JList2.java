@@ -76,6 +76,7 @@ public class JList2 extends javax.swing.JFrame {
         String value=jTextField1.getText();
         DefaultListModel model=(DefaultListModel) jList1.getModel();
         model.addElement(value);
+        jTextField1.setText("");
         jList1.updateUI();
         
         //////////////////////////////////
