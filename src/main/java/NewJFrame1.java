@@ -54,6 +54,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.NORTH);
 
+        jList1.setToolTipText("");
         jScrollPane1.setViewportView(jList1);
 
         getContentPane().add(jScrollPane1, java.awt.BorderLayout.CENTER);
@@ -66,6 +67,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
         String item=(String) jComboBox1.getSelectedItem();
         DefaultListModel model=(DefaultListModel) jList1.getModel();
         model.addElement(item);
+       
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
