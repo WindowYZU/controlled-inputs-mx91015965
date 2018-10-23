@@ -38,6 +38,7 @@ public class JLIst1 {
         v.add("a");
         v.add(1);
         JList list =new JList(v);
+        
         list.setCellRenderer(new ListCellRenderer() {
             @Override
             public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
@@ -57,6 +58,7 @@ public class JLIst1 {
             }
         });
         //////////////////////////////////////////
+        scrollPane.getViewport().add(list);
         frame.add(scrollPane);
         
         frame.setVisible(true);
